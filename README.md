@@ -7,7 +7,7 @@ terraform module for installing ecs integrations
 
 ```hcl
 module "effx_ecs" {
-  source  = "git::github.com/effxhq/terraform-aws-iam-ecs.git"
+  source  = "git::github.com/effxhq/terraform-aws-iam-ecs.git?ref=main
   external_id = 
   resource_tags = []
 }
