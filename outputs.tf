@@ -13,5 +13,3 @@ ouput "iam_role_name" {
 ouput "external_id" {
   value = var.external_id
 }
-
-
