@@ -1,3 +1,9 @@
+resource "random_string" "resource_code" {
+  length  = 32
+  special = false
+  upper   = false
+}
+
 data "aws_iam_policy_document" "instance-assume-role-policy" {
   statement {
     actions = ["sts:AssumeRole"]

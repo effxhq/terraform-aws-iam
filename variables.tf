@@ -9,6 +9,7 @@ variable "resource_tags" {
 
 variable "external_id" {
   type        = string
+  default     = random_string.resource_code.result
   description = "tags to add to the aws effx integration role"
 }
 
