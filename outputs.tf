@@ -3,13 +3,13 @@ output "aws_account_id" {
 }
 
 output "aws_region" {
-  value = data.aws_region.current.region.name
+  value = data.aws_region.current.name
 }
 
-ouput "iam_role_name" {
+output "iam_role_name" {
   value = aws_iam_role.effx_aws_ecs_integration_role.name
 }
 
-ouput "external_id" {
+output "external_id" {
   value = var.external_id
 }
