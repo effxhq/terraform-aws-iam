@@ -13,6 +13,10 @@ data "aws_iam_policy_document" "instance_assume_role_policy" {
   }
 }
 
+resource "random_string" "external_id" {
+  length = 32
+}
+
 resource "aws_iam_role" "effx_aws_ecs_integration_role" {
   name                = "effx-AWS-ECS-Integration-Role"
   assume_role_policy  = data.aws_iam_policy_document.instance_assume_role_policy.json

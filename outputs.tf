@@ -11,5 +11,5 @@ output "iam_role_name" {
 }
 
 output "external_id" {
-  value = var.external_id
+  value = random_string.external_id
 }
