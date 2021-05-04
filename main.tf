@@ -18,11 +18,13 @@ resource "random_string" "external_id" {
 }
 
 module "effx_aws_ecs" {
-  source = "./ecs"
+  source     = "./ecs"
+  enable_ecs = var.enable_ecs
 }
 
 module "effx_aws_lambda" {
-  source = "./lambda"
+  source        = "./lambda"
+  enable_lambda = var.enable_lambda
 }
 
 resource "aws_iam_role" "effx_aws_ecs_integration_role" {
