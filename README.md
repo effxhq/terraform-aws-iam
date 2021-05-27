@@ -1,7 +1,7 @@
 
 # terraform-aws-iam
 
-terraform module for installing ecs integrations
+terraform module for installing effx aws integrations
 
 # Usage
 
